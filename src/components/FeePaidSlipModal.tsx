@@ -104,14 +104,14 @@ export const FeePaidSlipModal: React.FC<FeePaidSlipModalProps> = ({ receipt, onC
           >
             {/* Watermark Logo in background */}
             <div className="absolute inset-0 flex items-center justify-center opacity-[0.04] pointer-events-none">
-              <img src="/school_logo.jpg" alt="" className="w-72 h-72 object-contain" />
+              <img src={`${import.meta.env.BASE_URL}school_logo.jpg`} alt="" className="w-72 h-72 object-contain" />
             </div>
 
             {/* Receipt Header */}
             <div className="border-b-2 border-[#4F6D7A] pb-4 mb-4">
               <div className="flex items-start justify-between gap-4">
                 <img 
-                  src="/school_logo.jpg" 
+                  src={`${import.meta.env.BASE_URL}school_logo.jpg`} 
                   alt="Wisdom School Logo" 
                   className="w-20 h-20 rounded-full border-2 border-[#89A894] object-cover shrink-0" 
                 />

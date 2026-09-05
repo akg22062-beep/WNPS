@@ -717,7 +717,7 @@ export const ExpensesView: React.FC = () => {
               {/* Header */}
               <div className="flex items-center justify-between border-b-2 border-[#2D312E] pb-3">
                 <img
-                  src="/school_logo.jpg"
+                  src={`${import.meta.env.BASE_URL}school_logo.jpg`}
                   alt="Wisdom School"
                   className="w-14 h-14 rounded-full border-2 border-amber-600 object-cover shrink-0"
                 />

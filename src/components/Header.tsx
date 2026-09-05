@@ -141,7 +141,7 @@ export const Header: React.FC<HeaderProps> = ({ onLogout }) => {
           <div className="flex items-center gap-3.5">
             <div className="relative">
               <img 
-                src="/school_logo.jpg" 
+                src={`${import.meta.env.BASE_URL}school_logo.jpg`} 
                 alt="Wisdom Nursery and Primary School Seal" 
                 className="w-14 h-14 md:w-16 md:h-16 rounded-full border-2 border-[#89A894] shadow-xs object-cover bg-white"
                 onError={(e) => {

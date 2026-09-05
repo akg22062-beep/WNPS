@@ -195,7 +195,7 @@ export const MonthlyFinancialReports: React.FC = () => {
         <div className="border-b-2 border-[#2D312E] pb-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img 
-              src="/school_logo.jpg" 
+              src={`${import.meta.env.BASE_URL}school_logo.jpg`} 
               alt="Wisdom School Seal" 
               className="w-14 h-14 rounded-full border border-[#D68A6E] object-cover" 
             />

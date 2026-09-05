@@ -266,7 +266,7 @@ export const FeeCardsStudio: React.FC = () => {
             <div className="text-white -m-5 mb-4 p-4 text-center relative border-b-2" style={{ backgroundColor: template.primary, borderBottomColor: template.accent }}>
               <div className="flex items-center justify-center gap-3">
                 <img 
-                  src="/school_logo.jpg" 
+                  src={`${import.meta.env.BASE_URL}school_logo.jpg`} 
                   alt="Wisdom School" 
                   className="w-13 h-13 rounded-full border-2 border-white object-cover shadow-xs shrink-0" 
                 />
@@ -414,7 +414,7 @@ export const FeeCardsStudio: React.FC = () => {
             {/* Header with logo */}
             <div className="flex items-center justify-between border-b-2 pb-3 mb-4" style={{ borderBottomColor: template.primary }}>
               <img 
-                src="/school_logo.jpg" 
+                src={`${import.meta.env.BASE_URL}school_logo.jpg`} 
                 alt="Wisdom School" 
                 className="w-16 h-16 rounded-full border-2 border-amber-600 object-cover shrink-0" 
               />
@@ -634,7 +634,7 @@ export const FeeCardsStudio: React.FC = () => {
           <div className="printable-document bg-white border-2 rounded-xl max-w-xl w-full p-6 text-slate-900 shadow-md relative overflow-hidden" style={{ borderColor: template.primary }}>
             <div className="flex items-center justify-between border-b-2 border-amber-700 pb-3 mb-4">
               <img 
-                src="/school_logo.jpg" 
+                src={`${import.meta.env.BASE_URL}school_logo.jpg`} 
                 alt="Wisdom School" 
                 className="w-16 h-16 rounded-full border-2 border-amber-600 object-cover shrink-0" 
               />
@@ -752,7 +752,7 @@ export const FeeCardsStudio: React.FC = () => {
           <div className="printable-document bg-white border-2 rounded-xl max-w-xl w-full p-6 text-slate-900 shadow-md relative overflow-hidden" style={{ borderColor: template.primary }}>
             <div className="flex items-center justify-between border-b-2 border-purple-800 pb-3 mb-4">
               <img 
-                src="/school_logo.jpg" 
+                src={`${import.meta.env.BASE_URL}school_logo.jpg`} 
                 alt="Wisdom School" 
                 className="w-16 h-16 rounded-full border-2 border-purple-600 object-cover shrink-0" 
               />

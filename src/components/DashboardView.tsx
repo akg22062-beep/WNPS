@@ -76,7 +76,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
       <div className="bg-[#2D312E] text-white rounded-2xl p-5 shadow-sm border border-[#3A3F3B] flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div className="flex items-center gap-4">
           <img 
-            src="/school_logo.jpg" 
+            src={`${import.meta.env.BASE_URL}school_logo.jpg`} 
             alt="Wisdom School Seal" 
             className="w-16 h-16 rounded-full border-2 border-[#89A894] object-cover bg-white shrink-0" 
           />

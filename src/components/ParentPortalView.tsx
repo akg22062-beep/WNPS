@@ -70,7 +70,7 @@ export const ParentPortalView: React.FC<ParentPortalViewProps> = ({
       <div className="max-w-xl mx-auto py-8 px-4">
         <div className="bg-white rounded-2xl border border-[#E2E8E2] p-6 sm:p-8 shadow-xs text-center space-y-5">
           <div className="mx-auto w-16 h-16 rounded-full border-2 border-[#D68A6E] overflow-hidden shadow-xs">
-            <img src="/school_logo.jpg" alt="Wisdom School" className="w-full h-full object-cover" />
+            <img src={`${import.meta.env.BASE_URL}school_logo.jpg`} alt="Wisdom School" className="w-full h-full object-cover" />
           </div>
 
           <div>
@@ -152,7 +152,7 @@ export const ParentPortalView: React.FC<ParentPortalViewProps> = ({
       <div className="bg-white rounded-2xl border border-[#E2E8E2] p-5 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div className="flex items-center gap-4">
           <div className="w-14 h-14 rounded-full border-2 border-[#89A894] overflow-hidden bg-[#89A894]/10 flex items-center justify-center shrink-0">
-            <img src="/school_logo.jpg" alt="Wisdom School" className="w-full h-full object-cover" />
+            <img src={`${import.meta.env.BASE_URL}school_logo.jpg`} alt="Wisdom School" className="w-full h-full object-cover" />
           </div>
 
           <div>
