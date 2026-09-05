@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --color-natural-bg: #F7F8F6;
+  --color-natural-surface: #FFFFFF;
+  --color-natural-surface-alt: #F2F4F2;
+  --color-natural-text: #2D312E;
+  --color-natural-muted: #6B7280;
+  --color-natural-border: #E2E8E2;
+  --color-natural-border-light: #F1F3F1;
+  --color-natural-slate: #4F6D7A;
+  --color-natural-slate-hover: #415A65;
+  --color-natural-sage: #89A894;
+  --color-natural-sage-hover: #789683;
+  --color-natural-terracotta: #D68A6E;
+  --color-natural-terracotta-hover: #C5785D;
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #F7F8F6;
+    color: #2D312E;
+  }
+
+  /* Re-map the shared accent utility classes when an office template is selected. */
+  [style*="--theme-primary"] .bg-\[\#4F6D7A\] { background-color: var(--theme-primary) !important; }
+  [style*="--theme-primary"] .hover\:bg-\[\#415A65\]:hover { background-color: var(--theme-primary-hover) !important; }
+  [style*="--theme-primary"] .text-\[\#4F6D7A\] { color: var(--theme-primary) !important; }
+  [style*="--theme-primary"] .border-\[\#4F6D7A\] { border-color: var(--theme-primary) !important; }
+  [style*="--theme-primary"] .bg-\[\#89A894\] { background-color: var(--theme-accent) !important; }
+  [style*="--theme-primary"] .hover\:bg-\[\#789683\]:hover { background-color: var(--theme-accent-hover) !important; }
+  [style*="--theme-primary"] .text-\[\#89A894\] { color: var(--theme-accent) !important; }
+  [style*="--theme-primary"] .border-\[\#89A894\] { border-color: var(--theme-accent) !important; }
+  [style*="--theme-primary"] .bg-\[\#F2F4F2\] { background-color: var(--theme-soft) !important; }
+  [style*="--theme-primary"] .border-\[\#E2E8E2\] { border-color: var(--theme-soft-border) !important; }
+}
+
+/* Print styling for official receipts and school fee cards */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .printable-document {
+    display: block !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background: white !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 10mm;
+  }
+}
